@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Multimedia HTML</title>
+    </head>
+
+    <body>
+        
+        <H1>Video HTML5</H1>
+        <div>
+            <button type="button" onclick="playVid()">Play Video</button>
+            <button type="button" onclick="pauseVid()">Pause Video</button>
+            <button type="button" onclick="makeSmall()">Small</button>
+            <button type="button" onclick="makeNormal()">Normal</button>
+            <button type="button" onclick="makeBig()">Big</button>
+            <button type="button" onclick="controlOn()">Control On</button>
+            <button type="button" onclick="controlOff()">Control Off</button>
+            <button type="button" onclick="playPause()">Play/Pause</button>
+            <button type="button" onclick="controlOnOff()">Control On/Off</button>
+        </div>
+        <video id="myVideo" width="520">
+            <source src="media/Wildlife.wmv" type="video/wmv">
+            <source src="media/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+            vid.loop = true; //looping video
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+
+        function makeSmall(){
+            vid.width=320;
+        }
+
+        function makeNormal(){
+            vid.width=520;
+        }
+
+        function makeBig(){
+            vid.width=720;
+        }
+
+        function controlOn(){
+            vid.controls = true;
+        }
+
+        function controlOff(){
+            vid.controls=false;
+        }
+
+        function playPause(){
+            if (vid.paused)
+            playVid();
+            else
+            pauseVid();
+        }
+
+        function controlOnOff(){
+            if (vid.controls==false)
+            controlOn();
+            else
+            controlOff();
+            
+        }
+    </script>
+
+    
+</html>
