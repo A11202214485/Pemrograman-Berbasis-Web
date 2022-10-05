@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pertemuan Minggu 4</title>
+    </head>
+    <body>
+        <h1>Belajar Form HTML</h1>
+        <hr>
+        <form name="fmhs" method="post" action="proses.php">
+            <table border="0">
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td><input type ="number" name="fnim" required></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="fnama" required></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date" name="ftgllhr" required></td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>:</td>
+                    <td> 
+                        <select nama="fprodi" required>
+                            <option value="-">Pilih</option>
+                            <option value="11">Teknik Informatika - S1</option>
+                            <option value="12">Sistem Informasi - S1</option>
+                            <option value="21">Teknik Informatika - D3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bidang Minat</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" name="fminat1" value="01"><label>Web Programming</label>
+                        <input type="checkbox" name="fminat2" value="02"><label>Mobile Programming</label>
+                        <input type="checkbox" name="fminat3" value="03"><label>Data Science</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lampiran Proposal</td>
+                    <td></td>
+                    <td><input type="file" name="fproposal" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="fsubmit">
+                        <input type="reset" name="freset">
+                    </td>
+                </tr>
+            </table>            
+        </form>
+    </body>
+</html>
