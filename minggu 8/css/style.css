@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1c2541;
+    padding: 15px 30px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #5bc0be;
+    padding: 5px 15px;
+    color:#ffffff;
+}
+
+nav a {
+    color:#0b132b;
+    
+    padding: 5px 15px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    background-color:#3a506b;
+    color:#ffffff;
+}
+
+main {
+    padding: 15px 30px;
+}
+
+main img {
+    width:200px;
+    float:center;
+}
+
+footer {
+    text-align: center;
+    background-color: #1c2541;
+    padding:10px;
+    font-size: 12px;
+    color: #ffffff;
+
+}
