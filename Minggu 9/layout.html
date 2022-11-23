@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-devices-width, initial-scale=1.0">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            header {
+                border: 1px solid blue;
+                padding: 25px;
+            }
+            .row:after{
+                content:"";
+                clear:both;
+                display: table;
+            }
+
+            [class*="col-"]{
+                float: left;
+                padding:10px;
+                border: 1px solid blue;
+            }
+            .col-1 {width:8.33%}
+            .col-2 {width:16.66%}
+            .col-3 {width:25%}
+            .col-4 {width:33.33%}
+            .col-5 {width:41.66%}
+            .col-6 {width:50%}
+            .col-7 {width:58.33%}
+            .col-8 {width:66.66%}
+            .col-9 {width:75%}
+            .col-10 {width:83.33%}
+            .col-11 {width:91.66%}
+            .col-12 {width:100%}
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <h2>Judul Halaman/Header</h2>
+        </header>
+        <main class="row">
+            <nav class="col-3">
+                <ul>
+                    <li>Menu 1</li>
+                    <li>Menu 2</li>
+                </ul>
+            </nav>
+            <article class="col-9">
+                <h4>Judul Artikel</h4>
+                <p><img src="img/Penguins.jpg" class="col-3" style="margin: 0 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis enim risus, convallis in placerat sit amet, sodales eu nisl. Donec eu neque sed libero egestas convallis. Praesent bibendum malesuada varius. Ut dignissim felis ut nunc consectetur ultrices. Proin egestas felis non leo imperdiet, vitae molestie augue aliquam. Donec molestie sed erat eu aliquam. Aliquam quis dignissim magna. Etiam facilisis odio sapien, quis finibus lectus ultrices a. Vestibulum sollicitudin sollicitudin auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras faucibus mauris et elementum tempus. Phasellus convallis interdum mauris, id consectetur nunc hendrerit sed.</p>
+            </article>
+        </main>
+        <footer class="col-12">
+            copyright <i>&copy;</i> pbw2022
+        </footer>
+    </body>
+</html>
